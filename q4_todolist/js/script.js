@@ -59,7 +59,7 @@ function createToDo(){
   removeButton.onclick = function(){
     var v = confirm("Are you sure?")
     if(v){
-      span.style.color = "green";
+      span.style.color = "lightgray";
       this.parentNode.removeChild(replaceButton);
       this.parentNode.removeChild(this);
       //順序有差，如果移除自己，就不能移除兄弟
