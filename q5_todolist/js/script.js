@@ -1,5 +1,6 @@
 
 // var rad = document.myForm.myRadios;
+// console.log(rad[1].value);
 // var prev = null;
 // for(var i = 0; i < rad.length; i++) {
 //     rad[i].onclick = function() {
@@ -27,9 +28,19 @@ function createToDo(){
     return;
     // console.log("45");
   }
+
   span.innerHTML = input;
   todo.appendChild(span);
-  console.log(rad)
+
+  var rush = document.getElementsByClassName("a");
+  console.log(rush);
+  if (document.myForm.myRadios.value == 1){
+    span.style.color = "red";
+  }
+  else{
+    span.style.color = "darkgreen";
+  }
+  // console.log(rad)
   // if (rad[0] == true){
   //   span.style.color = "red";
   // }
@@ -59,7 +70,7 @@ function createToDo(){
   removeButton.onclick = function(){
     var v = confirm("Are you sure?")
     if(v){
-      span.style.color = "green";
+      span.style.color = "lightgray";
       this.parentNode.removeChild(replaceButton);
       this.parentNode.removeChild(this);
       //順序有差，如果移除自己，就不能移除兄弟

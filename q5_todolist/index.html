@@ -3,31 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
-  <script src="js/script.js"></script>
 </head>
 <body>
   <div id="container"></div>
   <input type="text" name="" id="input">
   <button onclick= "createToDo()">+</button>
   <form name="myForm">
-    <h3><input type="radio" name="myRadios"  value="1" CHECKED/>緊急
-    <input type="radio" name="myRadios"  value="2" />不緊急</h3>
+    <h3><input type="radio" name="myRadios" value="1" CHECKED/>緊急
+    <input type="radio" name="myRadios" value="2" />不緊急</h3>
   </form>
 
   <div id="todolist"></div>
 
-  <!-- <script>
-    var rad = document.myForm.myRadios;
-    var prev = null;
-    for(var i = 0; i < rad.length; i++) {
-        rad[i].onclick = function() {
-            (prev)? console.log(prev.value):null;
-            if(this !== prev) {
-                prev = this;
-            }
-            console.log(this.value)
-        };
-    }
-</script> -->
+  <script src="js/script.js"></script>
 </body>
 </html>
