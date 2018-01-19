@@ -3,7 +3,7 @@ var state = true;
 function toggleLight(){
   var image = document.getElementById("image");
   state = !state;
-  state ?  image.src = "img/on.jpg" : image.src = "img/off.jpg";
+  image.src = state ? "img/on.jpg" : "img/off.jpg";
 }
 
 function setUp(){
