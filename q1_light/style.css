@@ -1,0 +1,11 @@
+#image{
+  float: left;
+  height: 500px;
+  width: auto;
+  margin:20px;
+}
+
+#image img{
+  max-width:100%;
+  max-height:100%;
+}
